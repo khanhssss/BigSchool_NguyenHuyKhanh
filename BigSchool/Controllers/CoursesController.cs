@@ -60,7 +60,7 @@ namespace BigSchool.Controllers
                 .Include(l => l.Lecturer)
                 .Include(l => l.Category)
                 .ToList();
-            var viewModel = new CourseViewModel
+            var viewModel = new CoursesViewModel
             {
                 UpcommingCourses = courses,
                 ShowAction = User.Identity.IsAuthenticated
